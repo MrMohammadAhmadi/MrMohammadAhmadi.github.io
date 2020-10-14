@@ -1,0 +1,180 @@
+body {
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+}
+.txt-gray {
+  color: gray;
+}
+.txt-lightgrey {
+  color: #d3d3d3;
+}
+.txt-darkgrey {
+  color: #3f3f3f;
+}
+.bg-gray {
+  background-color: gray;
+}
+.bg-lightgrey {
+  background-color: #d3d3d3;
+}
+.bg-darkgrey {
+  background-color: #3f3f3f;
+}
+header .row,
+section:not(#contact) {
+  min-height: 100vh;
+}
+/* nav bar styles ------------------------------------------------------------------ */
+nav {
+  background-color: rgb(36, 36, 36);
+}
+nav li {
+  border-bottom: 1px solid rgb(66, 66, 66);
+}
+nav li a {
+  color: #d8d8d8;
+}
+nav li a:hover {
+  color: #fff;
+}
+nav img {
+  height: 25px;
+}
+nav .navbar-toggler-icon {
+  color: lightgray;
+  transform: rotate(90deg);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: inherit;
+}
+button:focus {
+  outline: none;
+}
+.virgool-icon {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+}
+/* header styles ---------------------------------------------------------- */
+
+header {
+  background-image: url(./assets/img/slider.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header .headerDialog {
+  min-height: 100px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* portfolio styles ---------------------------------------------------------- */
+
+#portfolio {
+  background: linear-gradient(
+    0deg,
+    #666 14%,
+    rgba(255, 255, 255, 0.4990371148459384) 100%
+  );
+}
+#portfolio .cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#portfolio .card {
+  margin: 10px 0px;
+  transition: 0.4s all;
+  opacity: 0.9;
+}
+#portfolio .card:hover {
+  margin-top: 0;
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+#portfolio .card-img-top {
+  width: 100%;
+}
+/* contact styles ---------------------------------------------------------- */
+#contact div ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+#contact div ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.bg-codepen {
+  width: 24px;
+  height: 24px;
+  background: url("./assets/img/css_sprites.png") -10px -101px;
+}
+.bg-email {
+  width: 27px;
+  height: 23px;
+  background: url("./assets/img/css_sprites.png") -10px -58px;
+}
+.bg-github {
+  width: 27px;
+  height: 27px;
+  background: url("./assets/img/css_sprites.png") -57px -10px;
+}
+.bg-insta {
+  width: 27px;
+  height: 28px;
+  background: url("./assets/img/css_sprites.png") -10px -10px;
+}
+.bg-phone {
+  width: 24px;
+  height: 24px;
+  background: url("./assets/img/css_sprites.png") -54px -101px;
+}
+.bg-stackoverflow {
+  width: 22px;
+  height: 28px;
+  background: url("./assets/img/css_sprites.png") -104px -10px;
+}
+
+@media screen and (min-width: 576px) {
+  nav {
+    background: linear-gradient(
+      180deg,
+      rgba(6, 6, 6, 0.927608543417367) 0,
+      rgba(235, 235, 235, 0.007) 98%,
+      rgba(235, 235, 235, 0.001) 95%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 888;
+  }
+  nav li {
+    border-bottom: none;
+  }
+  nav img {
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #contact .phone ul {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #contact .phone ul {
+    padding-left: 180px;
+  }
+}
